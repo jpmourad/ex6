@@ -14,4 +14,10 @@ public enum Raca {
     public String getRaca() {
         return raca;
     }
+
+    @Override
+    public String
+    toString() {
+        return raca;
+    }
 }
