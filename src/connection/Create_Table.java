@@ -17,7 +17,7 @@ public class Create_Table {
 
         try {
 
-            String query="create table bovino(sl_no SERIAL primary key, brinco varchar(8) NOT NULL, nome varchar(20) NOT NULL, situacao varchar(15), sexo varchar(2), brinco_Mae varchar(8) NOT NULL, brinco_Pai varchar(8) NOT NULL, atributos.Raca varchar(15), data_Nascimento DATE )";
+            String query="create table bovino(sl_no SERIAL primary key, brinco varchar(8) NOT NULL, nome varchar(20) NOT NULL, situacao varchar(15), sexo varchar(2), brinco_mae varchar(8), brinco_pai varchar(8), raca varchar(15), data_Nascimento DATE )";
             statemnt= connection.createStatement();
             statemnt.executeUpdate(query);
             System.out.println("Finalizado");
