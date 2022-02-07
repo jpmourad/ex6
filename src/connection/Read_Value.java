@@ -36,10 +36,11 @@ public class Read_Value {
             while(rs.next()){
                 for (int i = 1; i<=n_colunas; i++){
                     if(i>1){
-                        System.out.println(", ");
+                        System.out.println("  ");
                     }
                     String valorColuna = rs.getString(i);
-                    System.out.print(valorColuna + " " + rsmd.getColumnName(i));
+                    System.out.println("\t");
+                    System.out.print(rsmd.getColumnName(i) + " : " + valorColuna);
                 }
             }
         }catch (Exception e) {

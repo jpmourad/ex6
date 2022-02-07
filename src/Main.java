@@ -6,16 +6,16 @@ import connection.Read_Value;
 
 public class Main {
     public static void main(String[] args) {
-        Bovino bovino = new Bovino("brinco", "Angelino", "Morto", "F", "", "001",
-                Raca.RACA_GIR,"01/02/2018", "", "", "");
-        System.out.println(bovino);
+        Bovino bovino = new Bovino("002", "Angelino", "Morto", "F", "", "001", Raca.RACA_GIR,"01/02/2018", "", "", "");
 
-       Insert_Value inserir = new Insert_Value(bovino);
-       inserir.insert();
+
+
+        Insert_Value inserir = new Insert_Value(bovino);
+        inserir.insert();
 
         Read_Value ler = new Read_Value();
-        ler.read(bovino.getBrinco(),null);
-        ler.read(null, bovino.getNome());
+        ler.read(bovino.getBrinco(),null); // mostrar os dados a partir do brinco
+        //ler.read(null, bovino.getNome()); // mostrar os dados a partir do nome
     }
 
 
